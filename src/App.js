@@ -11,7 +11,22 @@ class App extends React.Component {
     
     };
   }
+  addItem(todovalue) {
+    if (todovalue !== "") {
+      const newItem = {
+        id: Date.now(),
+        value: todovalue,
+        isDone: false,
+      };
+      const list = [...this.state.list]; //... means append all values
+      list.push(newItem);
 
+      this.setState({
+        list,
+        newItem: "",
+      });
+    }
+  }
 
 
 
