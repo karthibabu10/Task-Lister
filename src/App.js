@@ -25,6 +25,34 @@ class App extends React.Component {
               >
                 Add to do
               </button>
+              <div className="list">
+            <ul>
+              {this.state.list.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <input
+                      type="checkbox"
+                      name="isDone"
+                      checked={item.isDone}
+                      onChange={() => {}}
+                    />
+                    {item.value}
+                    <button
+                      className="btn"
+                      onClick={() => this.deleteItem(item.id)}
+                    >
+                    Delete
+                    </button>
+                  </li>
+                );
+              })}
+              <li>
+                <input type="checkbox" />
+                Finish homework
+                <button className="btn ">Delete</button>
+              </li>
+            </ul>
+          </div>
               </div>
               </div>
               )
