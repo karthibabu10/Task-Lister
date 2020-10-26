@@ -8,4 +8,7 @@ input-text {
 .list ul li button {
   position: absolute;
   right: 0%;
+background: #f34541;
+  color: #fff !important;
+  text-transform: uppercase;
 }
