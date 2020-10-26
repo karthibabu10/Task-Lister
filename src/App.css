@@ -11,4 +11,7 @@ input-text {
 background: #f34541;
   color: #fff !important;
   text-transform: uppercase;
+text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
