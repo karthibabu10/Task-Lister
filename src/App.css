@@ -19,3 +19,7 @@ padding: 10px;
   display: inline-block;
   border: none;
 }
+.add-btn {
+  color: #fff !important;
+  text-transform: uppercase;
+}
