@@ -5,3 +5,7 @@ input-text {
   border-radius: 0.4rem;
   padding: 10px;
 }
+.list ul li button {
+  position: absolute;
+  right: 0%;
+}
