@@ -49,8 +49,8 @@ class App extends React.Component {
               ></input>
               <button
                 className="add-btn"
-                onClick={() => this.addItem(this.state.newItem)}
-                disabled={!this.state.newItem.length}
+               
+               
               >
                 Add to do
               </button>
@@ -68,8 +68,7 @@ class App extends React.Component {
                     {item.value}
                     <button
                       className="btn"
-                      onClick={() => this.deleteItem(item.id)}
-                    >
+                                          >
                     Delete
                     </button>
                   </li>
