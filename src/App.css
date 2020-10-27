@@ -26,4 +26,7 @@ padding: 10px;
   background: #7313cb;
   margin: 20px;
   padding: 10px;
+  border-radius: 0.4rem;
+  display: inline-block;
+  border: none;
 }
