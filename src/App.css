@@ -22,4 +22,6 @@ padding: 10px;
 .add-btn {
   color: #fff !important;
   text-transform: uppercase;
+  text-decoration: none;
+  background: #7313cb;
 }
