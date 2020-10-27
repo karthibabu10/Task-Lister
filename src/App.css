@@ -1,4 +1,4 @@
-input-text {
+.input-text {
   display: inline;
   margin: 0;
   border: none;
@@ -8,13 +8,13 @@ input-text {
 .list ul li button {
   position: absolute;
   right: 0%;
-background: #f34541;
+  background: #f34541;
   color: #fff !important;
   text-transform: uppercase;
-text-decoration: none;
+  text-decoration: none;
   margin-left: 10px;
   margin-right: 10px;
-padding: 10px;
+  padding: 10px;
   border-radius: 0.4rem;
   display: inline-block;
   border: none;
