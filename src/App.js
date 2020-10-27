@@ -46,8 +46,7 @@ class App extends React.Component {
                 type="text"
                 className="input-text"
                 placeholder="Write a todo"
-                value={this.state.newItem}
-                onChange={(e) => this.updateInput(e.target.value)}
+               
               ></input>
               <button
                 className="add-btn"
