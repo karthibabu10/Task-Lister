@@ -30,3 +30,8 @@ padding: 10px;
   display: inline-block;
   border: none;
 }
+.app-title {
+  text-align: center;
+  color: #020024;
+  font-size: 70px;
+}
