@@ -54,4 +54,6 @@ ul {
   line-height: 30px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+ border-bottom-color: #cccccc;
+  padding: 10px;
 }
