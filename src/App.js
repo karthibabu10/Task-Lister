@@ -75,7 +75,7 @@ class App extends React.Component {
                     {item.value}
                     <button
                       className="btn"
-                                          >
+                      onClick={() => this.deleteItem(item.id)}                   >
                     Delete
                     </button>
                   </li>
