@@ -40,3 +40,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
+ul {
+  /* remove default padding and margin from ul*/
+  margin: 0px;
+}
