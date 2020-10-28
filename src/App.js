@@ -29,8 +29,13 @@ class App extends React.Component {
   }
   updateInput(input) {
     this.setState({ newItem: input });
+    
   }
-
+  deleteItem(id) {
+    const list = [...this.state.list];
+    const updatedlist = list.filter((item) => item.id !== id); //filter method shld have a callback
+    this.setState({ list: updatedlist });
+  }
 
 
 
