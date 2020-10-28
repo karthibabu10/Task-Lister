@@ -52,4 +52,6 @@ ul {
   color: #000000;
   background-color: #ffffff;
   line-height: 30px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
