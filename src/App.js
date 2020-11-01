@@ -11,7 +11,9 @@ class App extends React.Component {
     
     };
   }
-  addItem(todovalue) {
+  addItem() {
+    let todovalue = this.state.newItem;
+    console.log(todovalue);
     if (todovalue !== "") {
       const newItem = {
         id: Date.now(),
@@ -28,8 +30,17 @@ class App extends React.Component {
     }
   }
   updateInput(input) {
+    console.log(input, '-----');
     this.setState({ newItem: input });
     
+  }
+  updateStatus(id){
+    let list = this.state.list;
+    var index = list.findIndex(p => p.id == id)
+    list[index].isDone = !list[index].isDone;
+    this.setState({
+      list : list
+    })
   }
   deleteItem(id) {
     const list = [...this.state.list];
@@ -56,7 +67,7 @@ class App extends React.Component {
               ></input>
               <button
                 className="add-btn"
-              
+              onClick={(e) => this.addItem()}
                
               >
                 Add to do
@@ -65,12 +76,12 @@ class App extends React.Component {
             <ul>
               {this.state.list.map((item) => {
                 return (
-                  <li key={item.id}>
+                  <li key={item.id} className={item.isDone ? 'done': 'notdone'}>
                     <input
                       type="checkbox"
                       name="isDone"
-                      checked={item.isDone}
-                      onChange={() => {}}
+                      checked={item.isDone }
+                      onChange={(e) => this.updateStatus(item.id)}
                     />
                     {item.value}
                     <button
@@ -81,11 +92,11 @@ class App extends React.Component {
                   </li>
                 );
               })}
-              <li>
+              {/* <li>
                 <input type="checkbox" />
                 Finish homework
                 <button className="btn ">Delete</button>
-              </li>
+              </li> */}
             </ul>
           </div>
               </div>
